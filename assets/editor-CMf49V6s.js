@@ -1,4 +1,4 @@
-import{n as u,c as m,h as w}from"./index-BiaW0kKP.js";const b="living-copy:token";function A(c){const o=new Map,y=new WeakMap,i=document.createElement("div");i.id="living-copy-bar",i.setAttribute("data-living-copy-ignore",""),i.innerHTML=`
+import{n as u,c as m,h as w}from"./index-BiZUaIM2.js";const b="living-copy:token";function A(c){const o=new Map,y=new WeakMap,i=document.createElement("div");i.id="living-copy-bar",i.setAttribute("data-living-copy-ignore",""),i.innerHTML=`
     <style>
       #living-copy-bar {
         position: fixed; left: 50%; transform: translateX(-50%); bottom: 20px;
