@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>WonderStorm — Joint Venture: Heads of Terms</title>
+<style>
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('https://cdn.jsdelivr.net/fontsource/fonts/cormorant-garamond@latest/latin-400-normal.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('https://cdn.jsdelivr.net/fontsource/fonts/cormorant-garamond@latest/latin-500-normal.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('https://cdn.jsdelivr.net/fontsource/fonts/cormorant-garamond@latest/latin-600-normal.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'IBM Plex Serif';
+    src: url('https://cdn.jsdelivr.net/fontsource/fonts/ibm-plex-serif@latest/latin-400-normal.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'IBM Plex Serif';
+    src: url('https://cdn.jsdelivr.net/fontsource/fonts/ibm-plex-serif@latest/latin-500-normal.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'IBM Plex Serif';
+    src: url('https://cdn.jsdelivr.net/fontsource/fonts/ibm-plex-serif@latest/latin-600-normal.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'IBM Plex Serif';
+    src: url('https://cdn.jsdelivr.net/fontsource/fonts/ibm-plex-serif@latest/latin-400-italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Monaspace Radon';
+    src: url('https://cdn.jsdelivr.net/gh/githubnext/monaspace@main/fonts/Web%20Fonts/Static%20Web%20Fonts/Monaspace%20Radon/MonaspaceRadon-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Monaspace Radon';
+    src: url('https://cdn.jsdelivr.net/gh/githubnext/monaspace@main/fonts/Web%20Fonts/Static%20Web%20Fonts/Monaspace%20Radon/MonaspaceRadon-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+:root {
+    --bg: #0a0a0a;
+    --bg-panel: #111111;
+    --bg-panel-accent: rgba(167,139,250,0.10);
+    --text: #ffffff;
+    --text-dim: rgba(255,255,255,0.65);
+    --text-dimmer: rgba(255,255,255,0.40);
+    --text-dimmest: rgba(255,255,255,0.18);
+    --accent: #a78bfa;
+    --accent-glow: rgba(167,139,250,0.45);
+    --accent-dim: rgba(167,139,250,0.14);
+    --secondary: #fbbf24;
+    --status-success: #4ade80;
+    --status-warning: #fbbf24;
+    --status-error: #f87171;
+    --status-info: #60a5fa;
+    --border: rgba(255,255,255,0.08);
+    --border-strong: rgba(255,255,255,0.16);
+    --font-display: 'Cormorant Garamond', 'IBM Plex Serif', Charter, Georgia, serif;
+    --font-body: 'IBM Plex Serif', Charter, Georgia, serif;
+    --font-brand: 'Cormorant Garamond', 'IBM Plex Serif', Charter, Georgia, serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 10pt;
+    line-height: 1.5;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    /* Better serif rendering on dark backgrounds */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+
+@page {
+    /* Use explicit mm dimensions instead of named size keyword.
+       Chrome's named-size handling can produce slightly smaller
+       printable areas than the literal page dimensions, leaving
+       gaps at right/bottom edges. Explicit mm forces full bleed. */
+    size: 215.9mm 279.4mm;
+    margin: 0;
+}
+
+.page {
+    width: 215.9mm;
+    padding: 0.6in 0.7in 0.6in 0.7in;
+    /* Each section starts on a fresh page (page-break-before: always)
+       — never orphaned at the bottom of the prior page. Content within
+       the section CAN break across page boundaries naturally
+       (page-break-inside NOT avoid on .page itself; tables/callouts
+       still keep their own atomicity below). This keeps section
+       openings clean and visually anchored while allowing long
+       sections to spill content naturally. */
+    page-break-before: always;
+    page-break-after: auto;
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+
+/* First content section can flow right after cover; cover keeps standalone */
+.page.cover { page-break-after: always; min-height: 287mm; margin-bottom: 0; }
+.page:last-child { page-break-after: auto; margin-bottom: 0; }
+/* Section opener stays together — heading + eyebrow + first content block.
+   Prevents the heading-orphaned-with-empty-body pattern at page tops. */
+.page > .page-header,
+.page > .section-eyebrow,
+.page > h1.section,
+.page > h1.section-heading {
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* Prevent orphaned headings / table rows */
+h1, h2, h3 { page-break-after: avoid; break-after: avoid; }
+table, .callout, .chart-wrap, .ask-table, .kpi-strip,
+.pullquote, .channel-bars, .rule-grid, .boundary-table, .kpi {
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+tr { page-break-inside: avoid; break-inside: avoid; }
+
+
+/* Red rule at left of content pages. The previous design used
+   margin-left:18mm to indent the page from the document edge — but
+   the page was still 210mm wide, producing a 228mm horizontal
+   footprint that overflowed A4 by 18mm and misaligned content with
+   the cover. Drop margin-left; keep width:210mm. The red rule now
+   sits at the page edge, content pages and cover share the same
+   horizontal extents (0..210mm), and screenshots/exports stay
+   in-page-bounds. padding-left provides the visual breathing room
+   inside the rule. */
+.page:not(.cover) {
+    padding-left: 10mm;
+    padding-right: 16mm;
+}
+
+/* Page header — kept uppercase for runner-style nav (semantic micro-label) */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 7pt;
+    margin-bottom: 18pt;
+    font-size: 7.5pt;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-dimmer);
+    font-weight: 400;
+}
+.page-header .mark {
+    color: var(--accent);
+    font-weight: 500;
+    font-family: var(--font-display);
+    letter-spacing: 2px;
+}
+
+/* Cycle 26 design rule: page-bottom footer with build-attestation
+   (PILLAR 03 made visible — substrate composes its own evidence). */
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border);
+    padding-top: 4pt;
+    margin-top: 8pt;
+    page-break-before: avoid;
+    break-before: avoid;
+    font-family: var(--font-display);
+    font-size: 7.5pt;
+    color: var(--text-dimmer);
+    font-weight: 400;
+}
+.page-footer-brand { color: var(--text-dim); }
+.page-footer-mark { color: var(--accent); font-weight: 500; }
+
+/* Cover — explicit A4 box. width/height/min-height all redundantly
+   set to defeat any Chrome print quirk that previously rendered the
+   cover at ~83%×87% of A4. */
+.cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding 18mm top, 22mm sides, 14mm bottom — content was sitting
+       too far above the page edge with the original 24mm symmetric
+       vertical padding (cover-bottom anchored 24mm above page bottom).
+       Tighter bottom padding pulls the running footer line closer to
+       the page edge, gradient extends visibly to the bottom. */
+    padding: 18mm 22mm 14mm 22mm;
+    box-sizing: border-box;
+    width: 210mm;
+    min-width: 210mm;
+    height: 297mm;
+    min-height: 297mm;
+    margin: 0;
+    background:
+        radial-gradient(ellipse at 85% 15%, rgba(167,139,250,0.1), transparent 55%),
+        radial-gradient(ellipse at 15% 85%, rgba(251,191,36,0.06), transparent 55%),
+        #0a0a0a;
+}
+.cover::before { display: none; }
+.cover > * { position: relative; z-index: 1; }
+
+.cover-top {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    font-family: var(--font-display); font-size: 9pt;
+    color: var(--text-dimmer); font-weight: 400;
+    /* Cycle 23: was uppercase letterspaced — now editorial top-runner */
+}
+
+.cover-center { display: flex; flex-direction: column; gap: 28pt; }
+
+/* Brand lockup on cover (Cycle 38 — mark + wordmark side-by-side).
+   When both present, render as horizontal lockup (logo + wordmark form
+   single identity unit). Eyebrow runs as separate line below the lockup. */
+.cover-lockup {
+    display: flex; align-items: center; gap: 12pt;
+    margin-bottom: 6pt;
+}
+.cover-mark {
+    width: 44pt; height: 44pt; flex-shrink: 0;
+}
+.cover-mark svg { width: 100%; height: 100%; display: block; }
+.cover-wordmark {
+    font-family: var(--font-brand);
+    font-size: 36pt; line-height: 1; font-weight: 400;
+    letter-spacing: -0.5px; color: var(--text);
+    /* Preserves canonical capitalization (e.g. "mythOS") — no text-transform */
+}
+.cover-wordmark .accent { color: var(--accent); }
+
+.cover-eyebrow {
+    font-family: var(--font-display); font-size: 10pt;
+    letter-spacing: 6px; text-transform: uppercase; color: var(--accent);
+    font-weight: 400;
+}
+
+/* Brand-mark span — preserves canonical capitalization (e.g. mythOS) inside
+   uppercase-styled contexts. Always render brand wordmarks via this class
+   so text-transform/letter-spacing don't break the canon spelling. */
+.brand-mark {
+    text-transform: none !important;
+    letter-spacing: normal !important;
+    font-family: var(--font-brand, var(--font-display)) !important;
+}
+
+.cover-title {
+    font-family: var(--font-display); font-size: 56pt; line-height: 1.05;
+    letter-spacing: -0.5px; font-weight: 400; color: var(--text);
+    text-wrap: balance;
+    /* No uppercase — cover-eyebrow is the only uppercase on cover (Cycle 23) */
+}
+.cover-title .accent { color: var(--accent); }
+.cover-title .glow { text-shadow: 0 0 30pt rgba(167,139,250,0.45); }
+
+.cover-sub {
+    font-size: 14pt; color: var(--text-dim); font-weight: 300;
+    max-width: 140mm; line-height: 1.4;
+    text-wrap: pretty;
+}
+
+/* Cycle 47: vertical-stacked editorial-block (was 2x2 grid — felt form-y).
+   Each row is a label + value with hairline separator. Reads as masthead
+   credits, not a form to fill out. */
+.cover-meta {
+    display: flex; flex-direction: column;
+    padding-top: 22pt;
+    border-top: 1px solid var(--border-strong); font-size: 10pt;
+}
+.cover-meta > div {
+    display: grid; grid-template-columns: 70mm 1fr;
+    align-items: baseline;
+    padding: 9pt 0;
+    border-bottom: 1px solid var(--border);
+}
+.cover-meta > div:last-child { border-bottom: none; }
+.cover-meta dt {
+    font-family: var(--font-display);
+    color: var(--text-dimmer); font-weight: 400;
+    font-size: 8.5pt; letter-spacing: 1.5px; text-transform: uppercase;
+    /* uppercase here = semantic micro-label (one of the 4 surfaces with
+       intentional uppercase per Cycle 23 policy) */
+}
+.cover-meta dd { color: var(--text); font-weight: 400; font-size: 11pt; }
+
+.cover-bottom {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    font-family: var(--font-display); font-size: 9pt;
+    color: var(--text-dimmer);
+    /* Cycle 23: was uppercase letterspaced — now editorial footer-runner */
+}
+
+/* Section headings — Cycle 23: sentence case (was uppercase tier #2)
+   Cycle 29: text-wrap: balance prevents orphan/widow lines (Chrome 114+,
+   Safari 17.5+, Firefox 121+ — all printers shipping today). */
+h1.section {
+    font-family: var(--font-display); font-size: 20pt;
+    font-weight: 500; line-height: 1.15; letter-spacing: -0.3px;
+    margin-bottom: 8pt; color: var(--text);
+    text-wrap: balance;
+}
+h1.section .accent { color: var(--accent); font-weight: 400; }
+
+.section-eyebrow {
+    font-family: var(--font-display); font-size: 8pt;
+    letter-spacing: 5px; text-transform: uppercase; color: var(--accent);
+    font-weight: 400; margin-bottom: 6pt;
+}
+
+h2.sub {
+    font-family: var(--font-display); font-size: 12pt; font-weight: 500;
+    /* margin-top + padding-top combo: margin collapses with previous
+       block's margin-bottom in normal flow (no double-counting),
+       padding survives the page-break overflow case (where margin
+       collapses to 0 because heading lands at top of a fresh page).
+       Larger padding-top (14pt) ensures meaningful breathing room
+       on overflow pages without inflating normal-flow spacing too
+       much (margin-bottom of preceding block dominates the merge). */
+    margin-top: 4pt;
+    padding-top: 14pt;
+    margin-bottom: 6pt;
+    color: var(--text);
+    letter-spacing: -0.2px;
+    text-wrap: balance;
+}
+
+h3.mini {
+    font-family: var(--font-display); font-size: 12.5pt; font-weight: 600;
+    color: var(--text); font-style: normal;
+    margin: 0 0 8pt; padding-bottom: 6pt;
+    border-bottom: 1px solid var(--border);
+    line-height: 1.25; letter-spacing: -0.2px;
+}
+/* Pillar-style cards: lead identifier (PILLAR 01) becomes a small accent
+   eyebrow above the heading body so the headline lands as a sentence
+   instead of a label. Wraps "PILLAR NN · " automatically via .col-card-eyebrow. */
+.col-card .col-card-eyebrow {
+    display: block;
+    font-size: 7.5pt; letter-spacing: 1.8px; text-transform: uppercase;
+    color: var(--accent); font-weight: 600;
+    margin-bottom: 4pt;
+}
+.col-card .col-card-eyebrow + .col-card-headline {
+    display: block; color: var(--text); font-weight: 600;
+    font-size: 13pt; line-height: 1.2; letter-spacing: -0.2px;
+}
+
+p { margin-bottom: 6pt; color: var(--text-dim); font-weight: 400; text-wrap: pretty; }
+p.lede {
+    color: var(--text); font-size: 11.5pt; font-weight: 400;
+    line-height: 1.45; margin-bottom: 9pt;
+    text-wrap: pretty;
+}
+/* Tighter table cells for content-dense pages */
+table td, table th { padding: 5pt 8pt; font-size: 9.5pt; line-height: 1.4; }
+/* Tighter section heading margin so more body fits per page */
+h1.section { margin-bottom: 12pt; }
+h2.sub { margin-top: 12pt; margin-bottom: 6pt; }
+/* Emotional/editorial emphasis — strong = gravity, em = voice. Both
+   tightened so emphasis lands instead of slumping into body color. */
+p em, li em, td em { font-style: italic; color: var(--text); font-weight: 400; }
+p strong em, p em strong { color: var(--accent); font-style: italic; font-weight: 500; }
+/* Drop cap on the FIRST lede paragraph in each section (editorial-brief convention) */
+.section-eyebrow + h1.section + p.lede::first-letter,
+h1.section + p.lede::first-letter {
+    font-family: var(--font-display); font-size: 38pt;
+    float: left; line-height: 0.9; padding: 4pt 8pt 0 0;
+    color: var(--accent); font-weight: 400;
+}
+p strong, .white, td strong, li strong { color: var(--text); font-weight: 600; }
+
+/* KPI strip — Cycle 23: editorial-data-block style, not startup-deck-hero-card.
+   Hairline rules between items, no card backgrounds, sentence-case labels,
+   data-font (Monaspace Radon) for numbers per brief-format three-voice cast. */
+.kpi-strip {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 0; margin: 14pt 0 16pt;
+    border-top: 1px solid var(--border-strong);
+    border-bottom: 1px solid var(--border-strong);
+}
+.kpi {
+    padding: 12pt 16pt;
+    border-right: 1px solid var(--border);
+}
+.kpi:first-child { padding-left: 0; }
+.kpi:last-child { padding-right: 0; border-right: none; }
+.kpi-label {
+    font-size: 8pt; color: var(--text-dim);
+    margin-bottom: 6pt; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 1.2px;
+}
+.kpi-value {
+    font-family: 'Monaspace Radon', 'Monaspace Argon', var(--font-display);
+    font-size: 26pt; color: var(--text); font-weight: 500; line-height: 1;
+    letter-spacing: -0.8px;
+}
+.kpi-value.accent { color: var(--accent); }
+.kpi-sub {
+    font-size: 8.5pt; color: var(--text-dimmer);
+    margin-top: 7pt; font-weight: 400; line-height: 1.45;
+}
+
+/* Tables — Cycle 23: editorial style, sentence-case headers, refined leading */
+table {
+    width: 100%; border-collapse: collapse;
+    margin: 12pt 0 14pt; font-size: 10pt;
+}
+thead th {
+    text-align: left; font-family: var(--font-display);
+    font-size: 9.5pt; color: var(--text); padding: 8pt 10pt 8pt 0;
+    border-bottom: 1px solid var(--border-strong); font-weight: 500;
+    /* Cycle 23: was uppercase letterspaced — now sentence case display font */
+}
+thead th.num, td.num { text-align: right; }
+tbody td {
+    padding: 7pt 8pt 7pt 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-dim); font-weight: 400;
+    line-height: 1.5;
+}
+/* Cycle 26 design rule: subtle zebra-stripe for dense-table legibility */
+tbody tr:nth-child(even) td {
+    background: rgba(255, 255, 255, 0.015);
+}
+tbody tr:last-child td { border-bottom: none; }
+tbody td .white { color: var(--text); font-weight: 500; }
+tbody tr.total td {
+    color: var(--text); font-weight: 600;
+    border-top: 1px solid var(--border-strong);
+    border-bottom: none; padding-top: 7pt;
+}
+tbody tr.total td.num {
+    color: var(--accent); font-size: 10.5pt;
+    font-family: var(--font-display);
+}
+tbody tr.highlight td {
+    background: var(--accent-dim); color: var(--text);
+}
+tbody tr.highlight td.num { color: var(--accent); font-weight: 600; }
+
+/* Callout — Cycle 23: editorial sidebar style, sentence-case title, no card chrome */
+.callout {
+    border-left: 2px solid var(--accent);
+    /* padding-top:14pt survives page-break overflow (where margin-top
+       would collapse to 0 because the callout lands at the top of a
+       fresh print page); margin-top handles normal-flow inter-block
+       spacing via collapse with preceding margin-bottom. */
+    padding: 14pt 0 4pt 14pt;
+    margin: 6pt 0 10pt 0;
+}
+.callout .title {
+    font-family: var(--font-display); font-size: 11pt;
+    color: var(--accent); margin-bottom: 5pt; font-weight: 500;
+    /* Cycle 23: was uppercase letterspaced "DECK CALLOUT" — now editorial sidebar heading */
+}
+.callout p {
+    margin-bottom: 0; color: var(--text); font-weight: 400;
+    font-size: 9.5pt; line-height: 1.45;
+}
+.callout p + p { margin-top: 6pt; }
+
+/* Pullquote — Cycle 23: editorial-grade, sentence case, larger, more breathing room */
+.pullquote {
+    font-family: var(--font-display); font-size: 18pt;
+    font-weight: 400; line-height: 1.35; letter-spacing: -0.3px;
+    color: var(--text);
+    border-left: 3px solid var(--accent);
+    padding: 6pt 0 6pt 16pt; margin: 18pt 0; max-width: 90%;
+    text-wrap: balance;
+    /* Cycle 23: was uppercase 14pt — now sentence case 18pt for proclaim-not-shout
+       Cycle 29: text-wrap: balance prevents widow/orphan lines */
+}
+.pullquote.small { font-size: 14pt; }
+.pullquote .em { color: var(--accent); font-style: italic; }
+
+/* Emotional inflection (Cycle 39 — italic body emphasis paired with accent
+   color when used in regular prose; subtle .feeling class for tonal shifts). */
+p .em, p.lede .em, .callout .em {
+    font-style: italic; color: var(--accent); font-weight: 500;
+}
+.feeling {
+    font-style: italic; color: var(--text);
+}
+
+/* Channel bars */
+.channel-bars { display: flex; flex-direction: column; gap: 5pt; margin: 6pt 0; }
+.channel-bar {
+    display: grid; grid-template-columns: 55mm 1fr 18mm;
+    gap: 8pt; align-items: center; font-size: 8.5pt;
+}
+.channel-name { color: var(--text-dim); font-weight: 400; }
+.channel-name.dim { color: var(--text-dimmer); }
+.channel-track {
+    height: 10pt; background: var(--bg-panel);
+    border: 1px solid var(--border); position: relative; overflow: hidden;
+}
+.channel-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent) 0%, rgba(167,139,250,0.7) 100%);
+}
+.channel-fill.dim {
+    background: var(--text-dimmer);
+}
+.channel-pct {
+    text-align: right; color: var(--text);
+    font-weight: 500; font-size: 8.5pt;
+}
+.channel-pct.dim { color: var(--text-dimmer); }
+
+/* Chart */
+.chart-wrap {
+    background: var(--bg-panel); border: 1px solid var(--border);
+    padding: 10pt 12pt; margin: 8pt 0; border-radius: 2pt;
+}
+.chart-title {
+    font-family: var(--font-display); font-size: 10pt;
+    color: var(--text-dim); margin-bottom: 6pt; font-weight: 500;
+    /* Cycle 23: was uppercase letterspaced — now sentence case display */
+}
+.chart-legend {
+    display: flex; gap: 14pt; margin-top: 5pt;
+    font-size: 7.5pt; color: var(--text-dim); justify-content: center;
+    flex-wrap: wrap;
+}
+.legend-dot {
+    display: inline-block; width: 8pt; height: 8pt;
+    border-radius: 50%; vertical-align: middle; margin-right: 4pt;
+}
+
+/* Loom media image */
+.media-image {
+    margin: 10pt 0 12pt;
+    break-inside: avoid;
+}
+.media-image-frame {
+    border: 1px solid var(--border);
+    background: var(--bg-panel);
+    border-radius: 3pt;
+    overflow: hidden;
+}
+.media-image.frame-plain .media-image-frame {
+    border: none;
+    background: transparent;
+}
+.media-image.frame-bleed {
+    margin-left: -10mm;
+    margin-right: -16mm;
+}
+.media-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.media-image-placeholder {
+    min-height: 72mm;
+    display: grid;
+    place-items: center;
+    padding: 14pt;
+    color: var(--text-dim);
+    font-size: 8.5pt;
+    text-align: center;
+}
+.media-image-caption {
+    margin-top: 5pt;
+    color: var(--text-dim);
+    font-size: 8pt;
+    line-height: 1.35;
+}
+.media-image-receipt {
+    display: block;
+    margin-top: 3pt;
+    color: var(--text-dimmer);
+    font-size: 7pt;
+    font-family: var(--font-display);
+}
+
+/* Ask table */
+.ask-table {
+    background: var(--bg-panel); border: 1px solid var(--border-strong);
+    padding: 0; margin: 10pt 0; border-radius: 2pt; overflow: hidden;
+}
+.ask-row {
+    display: grid; grid-template-columns: 14mm 1fr auto;
+    grid-column-gap: 10pt;
+    padding: 10pt 14pt; border-bottom: 1px solid var(--border);
+    align-items: center;
+}
+.ask-row:last-child { border-bottom: none; }
+.ask-num {
+    font-family: var(--font-display); font-size: 20pt;
+    color: var(--accent); font-weight: 400; line-height: 1;
+}
+.ask-label { color: var(--text); font-size: 10pt; font-weight: 400; }
+.ask-label .dim {
+    color: var(--text-dimmer); display: block;
+    font-size: 8pt; margin-top: 2pt; font-weight: 300; line-height: 1.35;
+}
+.ask-pill {
+    justify-self: end; font-family: var(--font-display);
+    font-size: 7.5pt; color: var(--accent); font-weight: 500;
+    /* Cycle 34: editorial pill — accent-tinted bg, thin border, capsule
+       rounded corners. */
+    background: var(--accent-dim);
+    border: 1px solid var(--accent);
+    padding: 3pt 9pt;
+    border-radius: 999pt;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 7pt;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
+/* Columns */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12pt; }
+.three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 9pt; }
+.four-col { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 7pt; }
+
+.col-card {
+    background: var(--bg-panel); border: 1px solid var(--border);
+    padding: 12pt 13pt; border-radius: 3pt;
+    position: relative;
+}
+.col-card ul.bare { font-size: 9pt; line-height: 1.4; }
+.col-card ul.bare li { margin-bottom: 3pt; }
+.col-card.accent {
+    background: var(--accent-dim); border-color: var(--accent);
+}
+.col-card p { color: var(--text); font-size: 9.5pt; line-height: 1.5; }
+
+/* Pillar variant — distinct treatment from default col-card. Top-stripe
+   accent + accent-colored eyebrow so pillar columns read as labeled
+   claims. Default .col-card (founders) has NO accent stroke — recovers
+   horizontal text width per creator's May 23 evening direction. */
+.col-card.pillar {
+    border-top: 2pt solid var(--accent);
+    padding-top: 11pt;
+}
+.col-card.pillar .col-card-eyebrow {
+    color: var(--accent);
+    letter-spacing: 0.08em;
+}
+
+.note {
+    font-size: 7.5pt; color: var(--text-dimmer);
+    font-style: italic; margin-top: 6pt; font-weight: 300; line-height: 1.4;
+}
+
+/* Status pills — semantic color coding (success/warning/error/info)
+   Use inline as <span class="status status-success">live</span> in table
+   cells. Each color has ONE meaning per design canon. */
+.status {
+    display: inline-block;
+    font-size: 7.5pt; font-weight: 600;
+    padding: 2pt 7pt; border-radius: 999pt;
+    letter-spacing: 0.6px; text-transform: uppercase;
+    line-height: 1.3; white-space: nowrap;
+}
+.status-success { color: var(--status-success); background: rgba(74, 222, 128, 0.12); border: 1px solid rgba(74, 222, 128, 0.3); }
+.status-warning { color: var(--status-warning); background: rgba(251, 191, 36, 0.12); border: 1px solid rgba(251, 191, 36, 0.3); }
+.status-error   { color: var(--status-error);   background: rgba(248, 113, 113, 0.12); border: 1px solid rgba(248, 113, 113, 0.3); }
+.status-info    { color: var(--status-info);    background: rgba(96, 165, 250, 0.12); border: 1px solid rgba(96, 165, 250, 0.3); }
+
+ul { font-size: 9pt; }
+ul.bare { list-style: none; padding: 0; color: var(--text-dim); font-weight: 300; }
+ul.bare li { padding: 4pt 0; border-bottom: 1px solid var(--border); }
+ul.bare li:last-child { border-bottom: none; }
+
+.confidentiality {
+    text-align: center; font-size: 8pt; letter-spacing: 4px;
+    text-transform: uppercase; color: var(--text-dimmer); margin-top: 20pt;
+}
+
+
+
+/* The print control itself -- on screen only, out of the way, unmistakable. */
+.loom-print-btn {
+  position: fixed; right: 20px; bottom: 20px; z-index: 9999;
+  font: 600 13px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: .04em; text-transform: uppercase;
+  padding: 12px 18px; border-radius: 999px; cursor: pointer;
+  border: 1px solid currentColor; background: #111; color: #fff;
+  opacity: .55; transition: opacity .2s ease, transform .2s ease;
+}
+.loom-print-btn:hover { opacity: 1; transform: translateY(-1px); }
+@media (prefers-reduced-motion: reduce) { .loom-print-btn { transition: none; } }
+
+/* ─────────────────────────────────────────────────────────────────────────
+ * PRINT — BLACK ON WHITE, ALWAYS.
+ *
+ * Jack, Sep 9 2026: "make sure it only prints in black and white. meaning
+ * black letters on white paper. the colorful on screen version is exactly
+ * just that for on screen purposes."
+ *
+ * A client printing a JV should get a clean legal document, not a brand
+ * artefact rendered through a colour cartridge. print-color-adjust:economy
+ * is not enough on its own -- browsers still honour explicit colours -- so
+ * every colour is forced here rather than merely un-forced.
+ * ───────────────────────────────────────────────────────────────────────── */
+@media print {
+  @page { margin: 18mm 16mm; }
+
+  html, body {
+    background: #fff !important;
+    color: #000 !important;
+    print-color-adjust: economy;
+    -webkit-print-color-adjust: economy;
+  }
+
+  /* Everything black on white. Backgrounds, gradients and shadows all go --
+     a tinted table row costs a client real ink and reads as grey mud. */
+  *, *::before, *::after {
+    background: transparent !important;
+    background-image: none !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+  }
+
+  /* Structure has to survive losing colour, so it moves into rules and weight. */
+  table, th, td, .callout, .note, blockquote, hr {
+    border-color: #000 !important;
+  }
+  th { border-bottom: 1.5pt solid #000 !important; font-weight: 700; }
+  td, th { border: 0.5pt solid #666 !important; }
+  .callout, .note, blockquote { border: 1pt solid #000 !important; }
+
+  /* Rows that carried a highlight tint keep their emphasis as a rule. */
+  tr[class*="highlight"] td, td[class*="highlight"], .highlight {
+    border-left: 3pt solid #000 !important;
+    font-weight: 600;
+  }
+
+  a { color: #000 !important; text-decoration: underline; }
+
+  /* Page-break hygiene: never orphan a heading, never split a term mid-table. */
+  h1, h2, h3, h4 { break-after: avoid-page; page-break-after: avoid; }
+  tr, .callout, .note, figure, blockquote { break-inside: avoid; page-break-inside: avoid; }
+  section { break-before: auto; }
+
+  /* Screen furniture does not belong on paper. */
+  .loom-print-btn, .no-print, nav, video, iframe { display: none !important; }
+
+  img { max-width: 100% !important; filter: grayscale(100%) !important; }
+}
+
+</style>
+</head>
+<body>
+<section class="page cover">
+  <div class="cover-top">
+    <span>StarHub Studios PBC — Jack Polo · Gheric Speiginer</span>
+    <span>August 2026</span>
+  </div>
+  <div class="cover-center">
+    <div class="cover-lockup">
+      <div class="cover-wordmark">StarHub Studios</div>
+    </div>
+    <div class="cover-eyebrow">WonderStorm · Joint Venture · Heads of Terms</div>
+    <h1 class="cover-title">The seat costs nothing to hold. <span class="accent">We get paid when it works.</span></h1>
+    <p class="cover-sub">The platform is already built and already delivered. This document says what it costs, how it is recovered, and what happens to every dollar it earns — including the dollars we never touch.</p>
+    <dl class="cover-meta">
+      <div><dt>Founding-partner principal</dt><dd>$50,000 — fixed</dd></div>
+      <div><dt>Recovered from</dt><dd>New revenue only</dd></div>
+      <div><dt>Your existing tuition</dt><dd>100% yours</dd></div>
+    </dl>
+  </div>
+  <div class="cover-bottom">
+    <span>starhubstudios.com</span>
+    <span class="mark">Confidential</span>
+  </div>
+</section>
+
+<section class="page">
+  <div class="page-header">
+    <span>section</span>
+    <span class="mark">01 · The Parties</span>
+  </div>
+  <div class="section-eyebrow">Who is who, and what each brings</div>
+  <h1 class="section">Not a vendor. Not a client. <span class="accent">A flagship.</span></h1>
+<p class="lede">David put it best on our call: <em>we are helping one another &mdash; you have your tools, and we are giving you your first school platform.</em> That is the deal, exactly. <strong>StarHub Studios PBC</strong> brings the tools: the platform, the three portals, growth operations, the storytelling engine, and <strong>O.M.G. and S.O.S.</strong> &mdash; two programmes built before we met, included from day one and not held back as an upsell. <strong>Wonderstorm Academy</strong> &mdash; David Yarbrough and Holly Yarbrough &mdash; brings the school, the method, the families, and the thing no amount of engineering produces: <strong>the first school</strong>. The proving ground, the reference, the case every school after this one gets shown. Neither side is buying from the other. One side brings a working school; the other brings the system that lets it travel.</p>
+<div class="callout">
+  <div class="title">◆ The discipline underneath every clause</div>
+  <p>Your tuition &perp; revenue from new digital lines &perp; revenue from other schools. Three ledgers, kept apart, each with its own split. We never take a share of a dollar we had nothing to do with, and we take no share of your tuition at any size. Where something is left open in this document, it is open on purpose, and it says who closes it.</p>
+</div>
+  <div class="page-footer">
+    <span class="page-footer-brand"><span class="brand-mark">mythOS</span> · loom</span>
+    <span class="page-footer-mark">01 · The Parties</span>
+  </div>
+</section>
+
+<section class="page">
+  <div class="page-header">
+    <span>section</span>
+    <span class="mark">02 · What This Is, and What It Is Not</span>
+  </div>
+  <div class="section-eyebrow">Three things it could have been — and the one it is</div>
+  <h1 class="section">A revenue partnership. <span class="accent">Not an investment, not a sale.</span></h1>
+<table>
+<thead><tr>
+<th>What it is NOT</th>
+<th>Why that matters to you</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Not an equity deal.</strong> StarHub takes no ownership interest in Wonderstorm Academy &mdash; none at formation, none on recovery, none ever, absent a separate agreement you would have to sign.</td>
+<td>Your cap table is untouched. Nothing here dilutes you, and nothing here gives us a vote in your school.</td>
+</tr>
+<tr>
+<td><strong>Not a licence of your method.</strong> The WonderStorm method, curriculum, brand and community are yours. We operate a platform; we do not acquire what runs on it.</td>
+<td>If this partnership ends, the method leaves with you &mdash; intact and unencumbered.</td>
+</tr>
+<tr class="highlight">
+<td><strong>Not an invoice.</strong> There is no bill, no retainer due on a date, and no check to write for the build.</td>
+<td>If the system never generates a dollar, you never owe one. That is the whole shape of the deal.</td>
+</tr>
+</tbody></table>
+<p class="note">What it IS: a defined commercial partnership in which StarHub carries the cost of a platform it has already delivered, and recovers that cost only out of revenue the platform itself creates &mdash; then shares in continued growth for as long as it is actively producing it.</p>
+  <div class="page-footer">
+    <span class="page-footer-brand"><span class="brand-mark">mythOS</span> · loom</span>
+    <span class="page-footer-mark">02 · What This Is, and What It Is Not</span>
+  </div>
+</section>
+
+<section class="page">
+  <div class="page-header">
+    <span>section</span>
+    <span class="mark">03 · What You Keep</span>
+  </div>
+  <div class="section-eyebrow">The ledger of what never moves</div>
+  <h1 class="section">The school stays yours. <span class="accent">All of it.</span></h1>
+<table>
+<thead><tr>
+<th>Asset / authority</th>
+<th>Who holds it</th>
+<th>Bound and reversion</th>
+</tr></thead>
+<tbody>
+<tr class="highlight">
+<td>Wonderstorm Academy &mdash; ownership, governance, every operating decision</td>
+<td><strong>You — 100%, unchanged</strong></td>
+<td>Never transferred; never the currency anyone is compensated in</td>
+</tr>
+<tr>
+<td>The WonderStorm method, curriculum and pedagogy</td>
+<td><strong>You</strong></td>
+<td>Licensed to the platform only for as long as the platform runs it for you</td>
+</tr>
+<tr class="highlight">
+<td>Your existing families and the tuition they pay</td>
+<td><strong>You — 100%. We never touch it.</strong></td>
+<td>Explicitly outside every split in §04</td>
+</tr>
+<tr>
+<td>Enrollment decisions, admissions standards, who joins the school</td>
+<td><strong>You</strong></td>
+<td>The platform fills the funnel; it never decides who gets in</td>
+</tr>
+<tr>
+<td>The website, the three portals, and all content within them</td>
+<td>Yours on delivery</td>
+<td>If the partnership ends, the site stays yours &mdash; per the 60-day out-clause</td>
+</tr>
+<tr>
+<td>Family and student data</td>
+<td><strong>You</strong> &mdash; StarHub processes on your instruction only</td>
+<td>Never sold, never used to train anything, never leaves the arrangement</td>
+</tr>
+<tr>
+<td>Platform operations and the ad account we run</td>
+<td>StarHub &mdash; operating authority only</td>
+<td>Revocable; accounts and creative transfer to you at exit</td>
+</tr>
+<tr class="highlight">
+<td>The <strong>Wonderstorm configuration</strong> &mdash; your vocabulary, Holly&rsquo;s Level 0&ndash;12 maths spec and Grammar Gym spec, your programme structure, the Wonderstorm Code</td>
+<td><strong>You</strong></td>
+<td>Never redeployed to another school, with or without a live agreement &mdash; see below</td>
+</tr>
+<tr>
+<td>The underlying platform engine, the Leader-OS architecture, and <strong>O.M.G. + S.O.S.</strong></td>
+<td><strong>StarHub</strong> &mdash; built before Wonderstorm</td>
+<td><strong>Live in your build from day one</strong>, at no additional cost &mdash; they are part of what we bring, not an upsell. Reused across other clients carrying nothing of yours; if we part, they leave with us.</td>
+</tr>
+</tbody></table>
+<div class="callout">
+  <div class="title">◆ You asked what stops us selling your method to the school down the road</div>
+  <p>A fair question, and you should not have to take our word for it &mdash; so it is written rather than promised. <strong>Non-redeployment:</strong> the Wonderstorm configuration &mdash; your vocabulary, your programme specifications, your curriculum structure &mdash; is never deployed to any other school, with or without a live agreement between us. The platform engine underneath is ours and is reused across clients; nothing of yours travels with it. <strong>Territory:</strong> for <strong>24 months</strong> after any termination, StarHub will not contract with another Acton-network school, micro-school or homeschool network in <strong>Orange County, California</strong> without your written consent. <strong>Exit:</strong> on termination the export package ships within <strong>30 days</strong> &mdash; your content, data and configuration, in open formats, verified openable &mdash; and we destroy or return all Wonderstorm materials and certify it in writing. The mirror holds too: O.M.G. and S.O.S. are ours, built before we met, and they leave with us.</p>
+</div>
+  <div class="page-footer">
+    <span class="page-footer-brand"><span class="brand-mark">mythOS</span> · loom</span>
+    <span class="page-footer-mark">03 · What You Keep</span>
+  </div>
+</section>
+
+<section class="page">
+  <div class="page-header">
+    <span>section</span>
+    <span class="mark">04 · The Commercial Terms</span>
+  </div>
+  <div class="section-eyebrow">Every dollar, and whose it is</div>
+  <h1 class="section">We share what we build. <span class="accent">We take nothing from your students.</span></h1>
+<p>The platform's conservative market replacement value exceeds <strong>$250,000</strong>. Wonderstorm's founding-partner principal is fixed at <strong>$50,000</strong> &mdash; a deep founding discount, and a number that does not move. It carries <strong>no deferral uplift</strong>: no percentage is added for being paid later, whatever our standard rate becomes. It is recovered from <strong>our half of the two streams below and from nothing else</strong> &mdash; so if those streams never produce, it is never recovered, and you are never billed for it. That is what deferred against revenue honestly means.</p>
+<h2 class="sub">The three revenue ledgers</h2>
+<table>
+<thead><tr>
+<th>Revenue stream</th>
+<th>Whose it is</th>
+<th>The split</th>
+</tr></thead>
+<tbody>
+<tr class="highlight">
+<td><strong>Tuition</strong> &mdash; every student, the ones you have and the ones who come next</td>
+<td>Yours entirely</td>
+<td><strong>100% Wonderstorm.</strong> We never touch it. Not a percentage, not a recovery cap, not a share of margin &mdash; nothing. The school is the company you built, and enrolling a child is not a revenue stream we created.</td>
+</tr>
+<tr>
+<td><strong>New digital streams</strong> &mdash; courses, memberships, quests</td>
+<td><strong>Wonderstorm Digital</strong> &mdash; the joint entity, owned 50/50 by StarHub Studios and Wonderstorm</td>
+<td><strong>50 / 50 partners.</strong> Both ledgers below run through Wonderstorm Digital; neither side bills the other.</td>
+</tr>
+<tr>
+<td><strong>Platform licensing to other schools</strong> &mdash; the Acton network, and micro-schools and homeschool networks anywhere</td>
+<td><strong>Wonderstorm Digital</strong> &mdash; our technology, your flagship story</td>
+<td><strong>50 / 50 partners.</strong> Your method and your proof are half of what makes it sellable, so they are half of what it earns.</td>
+</tr>
+</tbody></table>
+<h2 class="sub">Wonderstorm Digital &amp;mdash; the entity that holds it</h2>
+<table>
+<thead><tr>
+<th>Term</th>
+<th>How it works</th>
+</tr></thead>
+<tbody>
+<tr class="highlight">
+<td><strong>Ownership</strong></td>
+<td>A fifty-fifty joint venture. <strong>Gheric Speiginer and Jack Polo on one side; David Yarbrough and Holly Yarbrough on the other.</strong> Each side holds 50% of the equity. Neither side controls it alone.</td>
+</tr>
+<tr>
+<td><strong>What the entity owns</strong></td>
+<td>Everything built for and by the venture &mdash; the Wonderstorm Digital platform, its products and its assets &mdash; is owned by <strong>Wonderstorm Digital itself</strong>, not by either side individually. What each side brought with it stays that side&rsquo;s own and is licensed in for the venture&rsquo;s use: Wonderstorm&rsquo;s method, curriculum and brand remain Wonderstorm&rsquo;s; StarHub&rsquo;s underlying engine, O.M.G. and S.O.S. remain StarHub&rsquo;s.</td>
+</tr>
+<tr>
+<td><strong>Profit</strong></td>
+<td>Fifty-fifty equity <em>is</em> the revenue split &mdash; there is no separate share to negotiate and no fee taken off the top before it.</td>
+</tr>
+<tr class="highlight">
+<td><strong>Distributions</strong></td>
+<td>Profits are <strong>distributed quarterly</strong>, within 30 days of quarter end, after operating costs and an agreed working-capital reserve. Money does not sit in the company by default. Retaining more than the reserve in any quarter requires both sides&rsquo; written agreement.</td>
+</tr>
+<tr>
+<td><strong>Transfer and dilution</strong></td>
+<td>Neither side may sell, transfer, pledge or dilute its equity without the other&rsquo;s written consent. Fifty-fifty stays fifty-fifty unless you both agree otherwise, in writing.</td>
+</tr>
+<tr>
+<td><strong>Operating costs</strong></td>
+<td>Ad spend, content production, platform maintenance and support are borne by the entity from its own revenue &mdash; not invoiced to Wonderstorm, and not invoiced to StarHub.</td>
+</tr>
+</tbody></table>
+<p class="note">This is why there is no monthly fee. Growth operations are not a service you buy from us; they are a cost of the company we own together, paid out of what it earns before anything is distributed to either side.</p>
+<div class="callout">
+  <div class="title">◆ What counts as a partnership dollar &amp;mdash; defined, not deferred</div>
+  <p>Only two ledgers are shared, so only two things need defining. A <strong>digital-stream dollar</strong> is revenue from a product that did not exist before this partnership &mdash; a course, membership, quest pack or certification &mdash; sold through a checkout StarHub built and operates. A <strong>licensing dollar</strong> is revenue from another school, micro-school or homeschool network paying to use the platform or the productised method. Both are counted GROSS at the checkout, net of payment-processor fees and refunds only. Neither includes tuition, fees, donations, grants or any revenue Wonderstorm would have earned without this partnership &mdash; not reduced, not shared, not counted. Every shared dollar appears in the monthly report with its source; anything we cannot show, we do not claim.</p>
+</div>
+<div class="callout">
+  <div class="title">◆ The rule we will not break</div>
+  <p>We do not take a percentage of your students. Not capped, not conditioned, not one third of anything — none. An earlier draft of this document recovered our build principal from the margin on new enrollments, and every protection we wrapped around that was answering the wrong question. The question was never whether the rate was safe. It was whether we should be in your tuition at all. We should not. You built the school; the children who walk into it are yours. We are paid from the streams we create, and only when they actually produce.</p>
+</div>
+<h2 class="sub">Your engagement — The World</h2>
+<table>
+<thead><tr>
+<th>What</th>
+<th>Terms</th>
+</tr></thead>
+<tbody>
+<tr class="highlight">
+<td><strong>The build</strong></td>
+<td><strong>$50,000</strong> &mdash; fixed, deferred, no uplift. Covers the platform and everything shipped with it: the public site, the Leader Operating System, the Coach and Parent portals, the core-skills programmes, the Shadow Day assessment, Phoenix, and the enrollment, tour-booking and FAQ layer. <strong>O.M.G. and S.O.S. are included from day one</strong> at no additional cost.</td>
+</tr>
+<tr class="highlight">
+<td><strong>Growth operations</strong></td>
+<td><strong>No monthly fee.</strong> Ad management, content production, continuous updates to the site and all three portals, and the monthly measurement report are funded from Wonderstorm Digital&rsquo;s own revenue &mdash; the company you half own &mdash; not billed to you as a retainer. <em>The parties acknowledge that the monthly operations fee of $1,500 per month has been removed from this agreement.</em></td>
+</tr>
+<tr>
+<td><strong>Beyond that scope</strong></td>
+<td>Quoted and agreed separately, in writing, before work starts &mdash; never added to the principal. The rate card runs Launch $50,000 &middot; Growth $90,000 &middot; Empire from $150,000; a larger build moves up a rung rather than stretching this one.</td>
+</tr>
+<tr>
+<td><strong>Trying it first</strong></td>
+<td>Sixty days to decide. Either side can walk at day 60 &mdash; no penalty, no clawback, the site stays yours.</td>
+</tr>
+<tr>
+<td><strong>Term</strong></td>
+<td>Following the sixty-day trial period, the parties commit to an <strong>eighteen-month operations term</strong>. During this term, either party may terminate only for material breach. Upon completion of the eighteen months, the agreement converts to month-to-month, terminable by either party with <strong>thirty days&rsquo; written notice</strong>.</td>
+</tr>
+</tbody></table>
+<p class="note">The World is the tier you chose: the method productised &mdash; curriculum licensing, the partner-school platform, family memberships and Coach certification. <strong>One number. The $50,000 is the only compensation for the build, and there is no recurring fee of any kind in this agreement.</strong></p>
+  <div class="page-footer">
+    <span class="page-footer-brand"><span class="brand-mark">mythOS</span> · loom</span>
+    <span class="page-footer-mark">04 · The Commercial Terms</span>
+  </div>
+</section>
+
+<section class="page">
+  <div class="page-header">
+    <span>section</span>
+    <span class="mark">05 · The Phases</span>
+  </div>
+  <div class="section-eyebrow">Gated — no phase starts until the last one proves itself</div>
+  <h1 class="section">Each phase earns <span class="accent">the next one.</span></h1>
+<table>
+<thead><tr>
+<th>Phase</th>
+<th>What happens</th>
+<th>The gate to the next phase</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>1 · Foundation</strong><br />Days 1&ndash;30</td>
+<td>Platform live, portals open, baseline instrumented, first campaigns on</td>
+<td>Baseline report delivered; speed-to-lead under 5 minutes proven</td>
+</tr>
+<tr>
+<td><strong>2 · Conversion</strong><br />Months 2&ndash;3</td>
+<td>Funnel optimization, storytelling rhythm, referral engine on</td>
+<td>Tour bookings and tour&rarr;enroll trending above baseline</td>
+</tr>
+<tr>
+<td><strong>3 · Growth</strong><br />Months 4&ndash;6</td>
+<td>Scaled ad spend, waitlist building, community events engine</td>
+<td>Enrollment target hit; ad spend paying for itself</td>
+</tr>
+<tr>
+<td><strong>4 · Expansion</strong><br />Month 7+</td>
+<td>New revenue streams: digital quests, memberships, curriculum licensing</td>
+<td>Partnership revenue share in full flow</td>
+</tr>
+</tbody></table>
+<p class="note">Phase 1 spends zero ad dollars. The storytelling engine, referral architecture and instant-response funnel harvest demand that already exists. Paid advertising switches on only at the gate where new revenue is flowing to fund it &mdash; the system never asks for fuel it has not already generated.</p>
+  <div class="page-footer">
+    <span class="page-footer-brand"><span class="brand-mark">mythOS</span> · loom</span>
+    <span class="page-footer-mark">05 · The Phases</span>
+  </div>
+</section>
+
+<section class="page">
+  <div class="page-header">
+    <span>section</span>
+    <span class="mark">06 · How This Protects You</span>
+  </div>
+  <div class="section-eyebrow">The exits, the caps, the receipts</div>
+  <h1 class="section">Every commitment here <span class="accent">has a way out.</span></h1>
+<table>
+<thead><tr>
+<th>Protection</th>
+<th>What it means in practice</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>The 60-day out-clause</strong></td>
+<td>Sixty days in, if it is not earning its keep, we part friends and the site stays yours. No penalty, no clawback, no argument.</td>
+</tr>
+<tr class="highlight">
+<td><strong>Your students are not on the table</strong></td>
+<td>There is no percentage, no cap, no margin share and no recovery mechanism attached to any child who enrolls. Tuition is 100% yours in every clause of this document. Nothing later in the agreement quietly reaches back into it.</td>
+</tr>
+<tr>
+<td><strong>The fixed principal</strong></td>
+<td>$50,000, and it does not grow. No interest, no escalation, no deferral uplift, no fees added while it is outstanding. It is recovered only from our half of the digital-stream and licensing ledgers &mdash; if those never earn, it is never recovered and never invoiced.</td>
+</tr>
+<tr>
+<td><strong>The activity condition</strong></td>
+<td>Our share of the streams we run applies only while StarHub is actively running them. We stop working, we stop sharing.</td>
+</tr>
+<tr>
+<td><strong>Attribution is measured, not asserted</strong></td>
+<td>Revenue is only shared when it is instrumented end-to-end and visible in the monthly report. If we cannot show it in the numbers, we do not claim it.</td>
+</tr>
+<tr>
+<td><strong>Your data stays yours</strong></td>
+<td>Family and student data is processed on your instruction, never sold, never used to train anything, and returned or destroyed at exit.</td>
+</tr>
+</tbody></table>
+  <div class="page-footer">
+    <span class="page-footer-brand"><span class="brand-mark">mythOS</span> · loom</span>
+    <span class="page-footer-mark">06 · How This Protects You</span>
+  </div>
+</section>
+
+<section class="page">
+  <div class="page-header">
+    <span>section</span>
+    <span class="mark">07 · What Is Still Open</span>
+  </div>
+  <div class="section-eyebrow">Named, not buried — each with an owner</div>
+  <h1 class="section">Four things this document <span class="accent">does not yet close.</span></h1>
+<p class="lede">A signature page that hid these would be worth less than one that names them &mdash; you would sign something that could not complete, and find out why at the worst moment. Each slot says who closes it.</p>
+<table>
+<thead><tr>
+<th>#</th>
+<th>What is open</th>
+<th>Who closes it</th>
+</tr></thead>
+<tbody>
+<tr class="highlight">
+<td>1</td>
+<td><strong>Scope beyond the platform.</strong> The $50,000 covers the platform and what ships with it. Work commissioned beyond that scope is quoted and agreed separately, in writing, before it starts &mdash; never added to the principal.</td>
+<td><strong>Both</strong> — as scope arises</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Wonderstorm Digital &mdash; formation.</strong> The ownership, profit, distribution and transfer terms are settled in §04. What remains is mechanical: jurisdiction of incorporation, officers, banking, the working-capital reserve figure, and the operating agreement that papers it.</td>
+<td><strong>Both</strong> — with counsel</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>The contracting entities.</strong> Which Wonderstorm entity signs, and whether StarHub contracts directly or through WonderStorm Digital. This gates signature of the definitive agreements.</td>
+<td><strong>Both</strong> — with counsel</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Renewal beyond the term.</strong> The term itself is settled in §04 &mdash; sixty-day trial, eighteen months, then month-to-month on thirty days&rsquo; notice. What is still open is what a longer renewal looks like once the principal is recovered.</td>
+<td><strong>Both</strong> — with counsel</td>
+</tr>
+</tbody></table>
+  <div class="page-footer">
+    <span class="page-footer-brand"><span class="brand-mark">mythOS</span> · loom</span>
+    <span class="page-footer-mark">07 · What Is Still Open</span>
+  </div>
+</section>
+
+<section class="page">
+  <div class="page-header">
+    <span>section</span>
+    <span class="mark">08 · What This Signature Does</span>
+  </div>
+  <div class="section-eyebrow">The effect of signing, stated plainly</div>
+  <h1 class="section">It starts the work. <span class="accent">It does not end the conversation.</span></h1>
+<p class="lede">This is a binding heads of terms. Signing it fixes the four revenue ledgers in &sect;04, the recovery cap and the fixed principal, the protections in &sect;06, and the phase gates in &sect;05 &mdash; and it authorizes counsel to paper the definitive agreement against them. It does not close the six items in &sect;07, and it does not transfer any ownership, any rights, or any authority over your school.</p>
+<h2 class="sub">Agreed and accepted</h2>
+<table>
+<thead><tr>
+<th>Party</th>
+<th>Signature</th>
+<th>Date</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>David Yarbrough</strong><br />Wonderstorm Academy</td>
+<td>&nbsp;<br />&nbsp;<br />______________________________</td>
+<td>&nbsp;<br />&nbsp;<br />______________</td>
+</tr>
+<tr>
+<td><strong>Holly Yarbrough</strong><br />Wonderstorm Academy</td>
+<td>&nbsp;<br />&nbsp;<br />______________________________</td>
+<td>&nbsp;<br />&nbsp;<br />______________</td>
+</tr>
+<tr>
+<td><strong>StarHub Studios PBC</strong><br />By: Jack Polo, Chief Executive Officer &mdash; authorized signatory</td>
+<td>&nbsp;<br />&nbsp;<br />______________________________</td>
+<td>&nbsp;<br />&nbsp;<br />______________</td>
+</tr>
+<tr>
+<td><strong>StarHub Studios PBC</strong><br />Countersigned: Gheric Speiginer, Co-founder &amp; Chief Technology Officer</td>
+<td>&nbsp;<br />&nbsp;<br />______________________________</td>
+<td>&nbsp;<br />&nbsp;<br />______________</td>
+</tr>
+</tbody></table>
+<p class="note">Titles for the Wonderstorm signatories are left for David and Holly to state &mdash; this document does not assume them. Whether the signing officer's authority to bind the PBC requires board or member consent under its bylaws is a question for counsel, and is not resolved here.</p>
+<p class="note">These heads of terms are confidential and subject to the definitive agreements described within. Nothing here is legal or financial advice, an offer to sell, or a solicitation of an investment in any security. Each party should take its own counsel before execution; where these terms and the definitive agreements differ, the definitive agreements govern.</p>
+  <div class="page-footer">
+    <span class="page-footer-brand"><span class="brand-mark">mythOS</span> · loom</span>
+    <span class="page-footer-mark">08 · What This Signature Does</span>
+  </div>
+</section>
+<button class="loom-print-btn no-print" onclick="window.print()" aria-label="Print this document in black and white">Print</button>
+</body>
+</html>
