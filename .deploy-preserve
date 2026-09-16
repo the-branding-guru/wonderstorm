@@ -2,3 +2,4 @@
 # These live beside the build, not inside dist/, so without this file the
 # deploy wipes them. It did exactly that on Sep 7 2026 to the whole library.
 library
+jv
